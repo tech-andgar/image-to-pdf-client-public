@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conversor de Imágenes a PDF</title>
     <meta name="description" content="Aplicación web para convertir imágenes en un único archivo PDF de manera segura y privada" />
-    <script type="module" crossorigin src="/image-to-pdf-client-public/assets/index-B9zAsS76.js"></script>
+    <script type="module" crossorigin src="/image-to-pdf-client-public/assets/index-CP0io8eE.js"></script>
     <link rel="modulepreload" crossorigin href="/image-to-pdf-client-public/assets/rolldown-runtime-y2wrX6ue.js">
     <link rel="modulepreload" crossorigin href="/image-to-pdf-client-public/assets/dnd-DbBy0iwD.js">
     <link rel="modulepreload" crossorigin href="/image-to-pdf-client-public/assets/pdf-B2aBZ1zu.js">
@@ -16,5 +16,21 @@
   <link rel="manifest" href="/image-to-pdf-client-public/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/image-to-pdf-client-public/registerSW.js"></script></head>
   <body>
     <div id="root"></div>
+
+    <!-- Partytown web worker loader for GA (zero main thread blocking) -->
+    <script src="/image-to-pdf-client-public/~partytown/partytown.js"></script>
+
+    <!-- Google Analytics with Partytown (runs in web worker) -->
+    <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4N51HKGYV5', {
+        anonymize_ip: true,
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false
+      });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4N51HKGYV5" type="text/partytown"></script>
   </body>
 </html>
