@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/img-to-pdf-client/sw.js', { scope: '/img-to-pdf-client/' })})}
