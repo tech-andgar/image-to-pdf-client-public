@@ -1,0 +1,1 @@
+var t=16777216,r=1e8;function a(t,r,a=16777216){const h=t*r;if(h<=a)return{width:t,height:r,scale:1};const n=Math.sqrt(a/h);return{width:Math.round(t*n),height:Math.round(r*n),scale:n}}export{r as n,a as r,t};
